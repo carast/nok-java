@@ -1,3 +1,6 @@
+/**
+ * Creado por Carlos Zaragoza
+ */
 package mx.com.nok.contrato.model.business;
 
 import java.io.Serializable;
