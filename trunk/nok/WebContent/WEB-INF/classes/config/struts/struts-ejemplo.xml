@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+ <!-- Ejemplo Base -->
+
+<struts>
+    <package name="ejemplo" extends="struts-default" namespace="/ejemplo">        
+	<action name="ejemploTest" method="ejemploTest" class="ejemploAction">		
+		<result name="error">/jsp/amerror.jsp</result>
+		<result name="success">/jsp/nokcatalogo.jsp</result>
+	</action>
+
+    </package>
+</struts>
