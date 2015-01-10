@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>  
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>  
+<Resource
+      name="PoolNok"
+      type="javax.sql.DataSource"
+      password="UXgD4wSm9sK4"
+      driverClassName="org.postgresql.Driver"
+      maxIdle="3"
+      maxWait="5000"
+      validationQuery=""
+      username="nokdbuser"
+      maxActive="4"
+      url="jdbc:postgresql://localhost:5432/nokdb"/>
+      <!-- url="jdbc:postgresql://107.170.49.102:5432/nokdb"/> -->
+    <!--   url="jdbc:postgresql://localhost:5432/nokdb"/> -->
+    <!--   url="jdbc:postgresql://107.170.49.102:5432/nokdb" -->
+   
+</Context>
+
+
+

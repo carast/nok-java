@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="tipoempleadoMap">
+	<typeAlias alias="classTipoEmpleado" type="mx.com.nok.tipoempleado.model.dto.TipoEmpleadoDTO"/>
+	
+	<resultMap class="classTipoEmpleado" id="tipoEmpleadoMap">
+		<result property="id_tipo_empleado" column="id_tipo_empelado"/>
+		<result property="tipo_empleado" column="tipo_empleado"/>
+		<result property="estatus" column="estatus"/>
+	</resultMap>
+	
+	<procedure id="insertTipoEmpleadoTest" resultMap="tipoEmpleadoMap" parameterClass="classTipoEmpleado">
+		select * from spi_tipo_empleado(#id_tipo_empleado#,#tipo_empleado#,#estatus#);
+	</procedure>
+</sqlMap>
