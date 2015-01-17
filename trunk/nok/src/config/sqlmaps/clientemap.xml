@@ -21,7 +21,7 @@
 	</resultMap>
 	
 	<procedure id="infoCliente" resultMap="clienteResultMap" parameterClass="classClienteMap">
-		SELECT * FROM spr_cliente (#idCliente#, #estatus#)
+		SELECT * FROM spr_cliente (#idCliente#, #filterEstatus#)
 	</procedure>
 	
 	<procedure id="updateCliente" resultMap="clienteResultMap" parameterClass="classClienteMap">
