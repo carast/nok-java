@@ -14,7 +14,7 @@
     <%@page import="java.net.URLDecoder" %>
     <%@page import="java.util.Properties" %>
     <%
-    Properties props = new Properties();
+  /*  Properties props = new Properties();
     String titulo = null;
     String strtitulo = null;
     try{
@@ -38,7 +38,7 @@
     }catch(Exception e){
     	System.out.println("ERROR EN HEADER GENERICO");
     	e.printStackTrace();
-    }
+    }*/
     
     %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -79,7 +79,7 @@ body {
 				<table border = "0" width="100%">					
 					<tr>
 						<td align="right" valign="center" class="titulopantalla">
-							<%=strtitulo%>
+							<%//=strtitulo%>Titulo Pantalla
 							<a  href="#" onclick="opener.cerrarVentanas();"> 
 							<img style="position:relative;top:4px;left:0px; " src="/images/logout.jpg" alt="Logout"  /> </a>
 						</td>                   

@@ -73,7 +73,7 @@
           <div class="topCenter_NavContainer">
 
 				<div style="float: left; text-align: left; width: 235px; height: 50px; padding-bottom: -10px;" align="left">
-					<img style="position: relative; top: 10px; left: 0px;"src="/images/maqzar.jpeg" border="0" />
+					<img style="position: relative; top: 10px; left: 0px;"src="/images/logoempresa.jpg" border="0" />
 				</div>
 					
 				<div style="float:right;width:180px; height:60px;" > </div>
@@ -114,7 +114,7 @@
 													
 											</li>	
 	                                 	</ul>
-                                 	</li-->
+                                 	</li>
                                  	
                                  	
                                  	<li><a href="#">Taller</a>
