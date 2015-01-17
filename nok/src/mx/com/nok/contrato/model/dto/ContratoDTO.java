@@ -14,8 +14,15 @@ public class ContratoDTO implements Serializable {
 	private String presupuesto;
 	private String idCliente;
 	private boolean estatus;
+	private String filterEstatus;
 	
 	
+	public String getFilterEstatus() {
+		return filterEstatus;
+	}
+	public void setFilterEstatus(String filterEstatus) {
+		this.filterEstatus = filterEstatus;
+	}
 	public String getIdContrato() {
 		return idContrato;
 	}
