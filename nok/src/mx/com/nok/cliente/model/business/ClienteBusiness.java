@@ -3,11 +3,10 @@ package mx.com.nok.cliente.model.business;
 import java.io.Serializable;
 import java.util.List;
 
-import flex.messaging.io.ArrayList;
-
 import mx.com.nok.cliente.dao.ClienteDAO;
 import mx.com.nok.cliente.model.dto.ClienteDTO;
 import mx.com.nok.cliente.model.service.ClienteService;
+import flex.messaging.io.ArrayList;
 
 public class ClienteBusiness implements Serializable, ClienteService {
 
