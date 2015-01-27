@@ -5,9 +5,9 @@
 
 <struts>
     <package name="proveedor" extends="struts-default" namespace="/proveedor">        
-	<action name="proveedorTest" method="proveedorTest" class="proveedorAction">		
+	<action name="proveedor" method="proveedorTest" class="proveedorAction">		
 		<result name="error">/jsp/amerror.jsp</result>
-		<result name="success">/jsp/exito.jsp</result>
+		<result name="success">/jsp/nokproveedor.jsp</result>
 	</action>
 
     </package>
