@@ -1,6 +1,7 @@
 package mx.com.nok.empleado.model.dto;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class EmpleadoDTO implements Serializable{	
 	
@@ -8,29 +9,29 @@ public class EmpleadoDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	private String idEmpleado;
-	 private String rfcEmpleado;
-	 private String nombre; 
-	 private String paterno;
-	 private String materno;
-	 private String telefono;
-	 private String celular;
-	 private String idLocalidad;
-	 private String localidad;
-	 private String idMunicipio;
-	 private String municipio;
-	 private String idEntidad;
-	 private String entidad;
-	 private String cp;
-	 private String numInterior;
-	 private String numExterior;
-	 private String idTipoEmpleado;
-	 private String tipoEmpleado;
-	 private String fechaAlta;
-	 private String domicilio;
-	 private String colonia;
-	 private boolean estatus;	
-	 private String filterEstatusEmpleado="";
-	 private boolean esusuario;
+	private String rfcEmpleado;
+	private String nombre; 
+	private String paterno;
+	private String materno;
+	private String telefono;
+	private String celular;
+	private String idLocalidad;
+	private String localidad;
+	private String idMunicipio;
+	private String municipio;
+	private String idEntidad;
+	private String entidad;
+	private String cp;
+	private String numInterior;
+	private String numExterior;
+	private String idTipoEmpleado;
+	private String tipoEmpleado;
+	private String fechaAlta;
+	private String domicilio;
+	private String colonia;
+	private boolean estatus;	
+	private String filterEstatusEmpleado="";
+	private boolean esusuario;
 	 
 
 
@@ -87,11 +88,20 @@ public class EmpleadoDTO implements Serializable{
 		 "\n numExterior = " + numExterior +
 		 "\n idTipoEmpleado = " + idTipoEmpleado +
 		 "\n tipoEmpleado = " + tipoEmpleado +
-		 "\n fechaAlta = " + fechaAlta +
 		 "\n domicilio = " + domicilio +
 		 "\n colonia = " + colonia +
 		 "\n estatus = " + estatus + "]";		 
 	 }
+
+
+	public String getFechaAlta() {
+		return fechaAlta;
+	}
+
+
+	public void setFechaAlta(String fechaAlta) {
+		this.fechaAlta = fechaAlta;
+	}
 
 
 	public String getRfcEmpleado() {
@@ -221,16 +231,6 @@ public class EmpleadoDTO implements Serializable{
 
 	public void setIdTipoEmpleado(String idTipoEmpleado) {
 		this.idTipoEmpleado = idTipoEmpleado;
-	}
-
-
-	public String getFechaAlta() {
-		return fechaAlta;
-	}
-
-
-	public void setFechaAlta(String fechaAlta) {
-		this.fechaAlta = fechaAlta;
 	}
 
 

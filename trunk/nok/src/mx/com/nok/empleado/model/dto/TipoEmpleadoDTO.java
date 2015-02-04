@@ -9,7 +9,7 @@ public class TipoEmpleadoDTO implements Serializable{
 	private String idTipoEmpleado;
 	private String tipoEmpleado;
 	private boolean estatus;
-	private String filterEstatusTipoEmpleado="";
+	private String filterEstatusTipoEmpleado="true";
 	
 	
 	public String toString (){

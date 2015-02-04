@@ -73,7 +73,7 @@
 
 
 
-	<procedure id="insertTipoEmpleado" resultMap="tipoEmpleadoMap"
+	<!-- procedure id="insertTipoEmpleado" resultMap="tipoEmpleadoMap"
 		parameterClass="classTipoEmpleadoMap">
 		SELECT * FROM spi_tipoEmpleado(#tipoEmpleado#)
 	</procedure>
@@ -82,9 +82,9 @@
 		parameterClass="classTipoEmpleadoMap">
 		SELECT * FROM
 		spr_tipoEmpleado(#idTipoEmpleado#,#filterEstatusTipoEmpleado#)
-	</procedure>
+	</procedure-->
 
-	<procedure id="deleteTipoEmpleado" resultClass="java.lang.Boolean"
+	<!-- rocedure id="deleteTipoEmpleado" resultClass="java.lang.Boolean"
 		parameterClass="classTipoEmpleadoMap">
 		SELECT * FROM
 		spd_tipoEmpleado(#idTipoEmpleado#)
@@ -93,13 +93,13 @@
 		parameterClass="classTipoEmpleadoMap">
 		SELECT * FROM
 		spu_tipoEmpleadoEstatus(#idTipoEmpleado#,#estatus#)
-	</procedure>
+	</procedure-->
 
-	<procedure id="updateTipoEmpleado" resultMap="tipoEmpleadoMap"
+	<!-- procedure id="updateTipoEmpleado" resultMap="tipoEmpleadoMap"
 		parameterClass="classTipoEmpleadoMap">
 		SELECT * FROM
 		spu_tipoEmpleado(#idTipoEmpleado#,#tipoEmpleado#,#estatus#)
-	</procedure>
+	</procedure-->
 
 
 

@@ -10,7 +10,66 @@ import mx.com.nok.tipoempleado.model.service.TipoEmpleadoService;
 
 public class TipoEmpleadoBusiness implements Serializable, TipoEmpleadoService {
 
+	private static final long serialVersionUID = 1L;
+	
 	private TipoEmpleadoDAO tipoEmpleadoDAO;
+	
+	@Override
+	public List<?> getTipoEmpleados(TipoEmpleadoDTO tipoEmpleadoDTO) {
+		List <?> list= new ArrayList<TipoEmpleadoDTO>();
+		try {			
+
+			list = tipoEmpleadoDAO.getTipoEmpleado(tipoEmpleadoDTO);
+
+		} catch (Exception e) {			
+			e.printStackTrace();
+			list=null;
+		}
+
+		return list;
+	}
+	
+	@Override
+	public boolean deleteTipoEmpleado(TipoEmpleadoDTO tipoEmpleadoDTO) {
+		try{
+			return tipoEmpleadoDAO.deleteTipoEmpleado(tipoEmpleadoDTO);
+		}catch(Exception e){
+			e.printStackTrace();
+			return false;
+		}
+	}
+
+	@Override
+	public TipoEmpleadoDTO insertTipoEmpleadoAopSession(
+			TipoEmpleadoDTO tipoEmpleadoDTO) {
+		try{
+			return tipoEmpleadoDAO.insertTipoEmpleado(tipoEmpleadoDTO);
+		}catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public TipoEmpleadoDTO updateTipoEmpleado(TipoEmpleadoDTO tipoEmpleadoDTO) {
+		try{
+			return tipoEmpleadoDAO.updateTipoEmpleado(tipoEmpleadoDTO);
+		}catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	@Override
+	public TipoEmpleadoDTO updateEstatusProveedor(
+			TipoEmpleadoDTO tipoEmpleadoDTO) {
+		try{
+			return tipoEmpleadoDAO.updateEstatusProveedor(tipoEmpleadoDTO);
+		}catch(Exception e){
+			e.printStackTrace();
+			return null;
+		}
+	}
 	
 	public TipoEmpleadoDAO getTipoEmpleadoDAO() {
 		return tipoEmpleadoDAO;
@@ -18,36 +77,6 @@ public class TipoEmpleadoBusiness implements Serializable, TipoEmpleadoService {
 
 	public void setTipoEmpleadoDAO(TipoEmpleadoDAO tipoEmpleadoDAO) {
 		this.tipoEmpleadoDAO = tipoEmpleadoDAO;
-	}
-
-	@Override
-	public List<?> insertTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO) {
-		List<?> list = new ArrayList<TipoEmpleadoDTO>();
-		try {
-			list = tipoEmpleadoDAO.insertTipoEmpleado(tipoEmpleadoDTO);
-		} catch (Exception e) {
-			// TODO: handle exception
-			list = null;
-		}
-		
-		return list;
-	}
-	
-	public String test()
-	{
-		return "Hola ";
-	}
-
-	@Override
-	public boolean deleteTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public List<?> getTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
