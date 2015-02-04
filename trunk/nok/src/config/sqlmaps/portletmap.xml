@@ -5,7 +5,7 @@
 	<typeAlias alias ="classSeccion" type="mx.com.nok.portlet.model.dto.SeccionDTO"/>
 	
 	<typeAlias alias ="classConfigPanel" type="mx.com.nok.portlet.model.dto.ConfigPanelDTO"/>
-	<typeAlias alias="classPortletUpdate" type="mx.com.nok.portlet.model.dto.PortletDTO"/>
+	<!-- typeAlias alias="classPortletUpdate" type="mx.com.nok.portlet.model.dto.PortletDTO"/-->
 		
 		
 	<resultMap id="configuracionPanelMap"   
@@ -47,7 +47,7 @@
 	</procedure>
 	
 	
-	<procedure id="updateInfoPortlet"  resultClass="java.lang.Boolean"  parameterClass="classPortletUpdate" >
+	<procedure id="updateInfoPortlet"  resultClass="java.lang.Boolean"  parameterClass="portlet" >
 		select * from spu_configpanel(#id_config#,#id_usuario#,#id_componente#,#main_posicion#,#posicion#);
 	</procedure>
 	
