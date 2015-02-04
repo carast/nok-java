@@ -5,8 +5,9 @@ import java.util.List;
 import mx.com.nok.empleado.model.dto.TipoEmpleadoDTO;
 
 public interface TipoEmpleadoService {
-	public List<?> insertTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO);
-	public boolean deleteTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO);
-	public List<?> getTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO);
-	public String test();
+	public TipoEmpleadoDTO insertTipoEmpleadoAopSession(TipoEmpleadoDTO tipoEmpleadoDTO);
+	public boolean deleteTipoEmpleado(TipoEmpleadoDTO tipoEmpleadoDTO);
+	public List<?> getTipoEmpleados(TipoEmpleadoDTO tipoEmpleadoDTO);
+	public TipoEmpleadoDTO updateTipoEmpleado(TipoEmpleadoDTO tipoEmpleadoDTO);
+	public TipoEmpleadoDTO updateEstatusProveedor(TipoEmpleadoDTO tipoEmpleadoDTO);
 }
