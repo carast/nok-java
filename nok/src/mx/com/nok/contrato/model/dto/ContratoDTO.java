@@ -16,7 +16,6 @@ public class ContratoDTO implements Serializable {
 	private boolean estatus;
 	private String filterEstatus;
 	
-	
 	public String getFilterEstatus() {
 		return filterEstatus;
 	}
