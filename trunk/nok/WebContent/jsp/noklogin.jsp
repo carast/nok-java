@@ -20,7 +20,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Prueba : Login</title>
+<title>NOK : Login</title>
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <LINK REL="stylesheet" type="text/css" HREF="/css/amestilologin.css">
 <LINK href="/css/template.css" type="text/css" rel="stylesheet">
 <LINK href="/css/homepage.css" type="text/css" rel="stylesheet">
