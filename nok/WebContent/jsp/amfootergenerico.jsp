@@ -13,6 +13,8 @@
 
 <html>
 <head>
+	<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <LINK href="/css/template.css" type="text/css" rel="stylesheet">
     <title></title>

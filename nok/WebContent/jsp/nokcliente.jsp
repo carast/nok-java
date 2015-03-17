@@ -16,13 +16,15 @@
 <html>
 <head>
 <title>Clientes</title>
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<script type="text/javascript" src="/js/swfobject.js"></script>
 </head>
 <body onLoad="document.getElementById('v8').focus();">
-	<div id="headerGenericoID" align="center" class="headerGenerico">
+	<!-- div id="headerGenericoID" align="center" class="headerGenerico">
 		<jsp:include page="/jsp/amheadergenerico.jsp"></jsp:include>
-	</div>
+	</div-->
 
 	<div id="flashcontent" align="center" width="100%" style="padding-left:-0px; z-index:300;" >
 			<script language="Javascript">
@@ -42,9 +44,9 @@
 											// ]]>
             </script>
 	</div>
-	<div id="footerGenericoID" align="center" class="footerGenerico">
+	<!-- div id="footerGenericoID" align="center" class="footerGenerico">
 		<jsp:include page="/jsp/amfootergenerico.jsp"></jsp:include>
-	</div>
+	</div-->
 </body>
 </html>
 

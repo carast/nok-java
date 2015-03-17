@@ -35,6 +35,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <!-- SmartMenus 6 config and script core files -->
 <link rel="stylesheet" type="text/css" href="/css/jquery.hrzAccordion.defaults.css">
 <LINK REL="stylesheet" type="text/css" HREF="/css/amestilologin.css">
@@ -58,7 +60,7 @@
 <script language="JavaScript" src="/js/swfobject.js"></script>
 <script type="text/javascript" src="/js/FusionCharts.js"></script>
 
-<title>Pruebas</title>
+<title></title>
 <style type="text/css">
 
 </style>

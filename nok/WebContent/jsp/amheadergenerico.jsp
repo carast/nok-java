@@ -46,6 +46,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title></title>
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <LINK href="/css/template.css" type="text/css" rel="stylesheet">
 <LINK href="/css/homepage.css" type="text/css" rel="stylesheet">
 <LINK href="/css/amestilologin.css" type="text/css" rel="stylesheet">
