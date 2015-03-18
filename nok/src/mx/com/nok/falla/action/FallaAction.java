@@ -22,11 +22,10 @@ public class FallaAction extends ActionSupport implements ServletRequestAware, S
     private HttpServletResponse servletResponse;
     private FallaService fallaService;
     
-    public String fallaTest()
+    public String fallaInit()
     {
     	try{
     		
-//    		Prueba Retrieve Falla
    		FallaDTO dto=new FallaDTO();
 //    		dto.setIdFalla("");    		
 //    		System.out.println("Retrieve Falla " + fallaService.catFalla(dto));
