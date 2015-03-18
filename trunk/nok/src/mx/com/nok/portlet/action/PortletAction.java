@@ -38,11 +38,11 @@ public class PortletAction extends ActionSupport implements ServletRequestAware,
     {
     	try {
     		System.out.println("Entrando..........");
-    		System.out.println(portletService.getInfoProtletsAopSession().toString());
+    		System.out.println(portletService.getInfoPortletsAopSession().toString());
     		
     		PortletDTO _portletDTO = new PortletDTO();
     		
-    		_portletDTO = (PortletDTO)portletService.getInfoProtletsAopSession();
+    		_portletDTO = (PortletDTO)portletService.getInfoPortletsAopSession();
 
 					
     		portletService.updatePosicionPortletAopSession(_portletDTO);

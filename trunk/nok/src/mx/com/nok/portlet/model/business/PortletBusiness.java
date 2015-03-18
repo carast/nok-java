@@ -71,7 +71,7 @@ public class PortletBusiness implements Serializable,PortletService{
 	 * Esta funcion es para obtener informacion de 
 	 * la configuracion de los portles del usuario.
 	 */
-	public List<?> getInfoProtletsAopSession() {
+	public List<?> getInfoPortletsAopSession() {
 		
 		
 		//Solicita datos de la session
