@@ -16,22 +16,59 @@
     request.setCharacterEncoding("ISO-8859-1");
 	response.setContentType("text/html; charset=ISO-8859-1");*/
     %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>NOK : Login</title>
-<link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<LINK REL="stylesheet" type="text/css" HREF="/css/amestilologin.css">
-<LINK href="/css/template.css" type="text/css" rel="stylesheet">
-<LINK href="/css/homepage.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/js/nokmenu.js?dev=<%=(int)(Math.random()*100)%>"></script>
-<style type="text/css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>MAQZAR : Management Mechanical Workshop</title>
 
-</style>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="/js/nokmenu.js?dev=<%=(int)(Math.random()*100)%>"></script>
+
+  </head>
+  
 <body onload="doRecargar();javascript:relocation(); document.getElementById('usuario').focus();">
+
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MAQZAR : Management Mechanical Workshop</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+           
+          </ul>
+         
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
 
 	<div width="100%" id="container" align="center">
 		<div style="position: relative; BORDER: #d6d6d6 1px solid; MARGIN: auto;width: 755px;height: 570px;" align="center" id="divprincipal">
@@ -42,34 +79,39 @@
 				
 			</div>
 			<div style="position: absolute;width: 100%;FLOAT: left;top:100px;">
-				<div style="position: relative;background: url(/images/xxx.jpg) no-repeat 0px 0px; background-position: center;width: 100%;height: 380px; float: left;">
+				
 					<form  action="<%=request.getContextPath()%>/login/login.action" id="loginform" method="POST">
-						<table border="0" style="position: relative; top:180px;" >	
+						<table>	
 							<tr>
-								<td align= "left" class="labellogin">
-									Usuario
+								<td class="labellogin">
+									Usuario:<br>
+									<input id="usuario" name="usuario" value="ADMIN" size="20" maxlength="15" onkeypress="javascript:validalogin(event);" autocomplete="off">
 								</td>
-								<td align= "left" colspan="2">
-									<input id="usuario" name="usuario" value="ZAOC810304NM0" size="20" maxlength="15" onkeypress="javascript:validalogin(event);" autocomplete="off">
+								<td colspan="2 ">
+									
 								</td>
 							</tr>
-							<tr>
-								<td align= "left" class="labellogin">
-									Password
+							<tr><br>
+								<td class="labellogin">
+									Password:<br>
+									<input type="password" id="password" name="password" valud="ADMIN" size="20" maxlength="10" onkeypress="javascript:validalogin(event);" autocomplete="off">
+								
 								</td>
-								<td align= "right">
-									<input type="password" id="password" name="password" size="20" maxlength="10" onkeypress="javascript:validalogin(event);" autocomplete="off">
-								</td>
-								<td align="right">
-									<input type="button" id="Aceptar" name="Aceptar" value="Aceptar" class="boton" onclick="javascript:validalogin2();"/>
+							
+								<td align= "right" colspan="2">
+									</td>
+							</tr>
+							<tr>	
+								<td align="left">
+								<br>
+									<input type="button" id="Aceptar" name="Aceptar" value="Aceptar" class="btn btn-sm btn-primary" onclick="javascript:validalogin2();"/>
 									&nbsp;
-									<input type="button" id="Cancelar" name="Cancelar" value="Limpiar" class ="boton" onclick="limpiaLogin();"/>
+									<input type="button" id="Cancelar" name="Cancelar" value="Limpiar" class ="btn btn-sm btn-default" onclick="limpiaLogin();"/>
 								</td>
 							</tr>
 						</table>
 						<input type="hidden" name="__RequestVerificationToken" value=""/>						
 					</form>		
-				</div>
 			</div>
 		<!-- 
 			<div style="position: relative; top:420px">
@@ -81,6 +123,11 @@
 
 
 
-
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>
