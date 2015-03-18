@@ -7,7 +7,7 @@ import mx.com.nok.portlet.model.dto.PortletDTO;
 
 public interface PortletService{
 
-	public List<?> getInfoProtletsAopSession();
+	public List<?> getInfoPortletsAopSession();
 	public  Boolean updatePosicionPortletAopSession(PortletDTO portletDTO);
 	
 }
