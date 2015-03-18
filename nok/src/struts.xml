@@ -25,7 +25,6 @@
 	<include file="config/struts/struts-categoria.xml"/>
 	<include file="config/struts/struts-resguardo.xml"/>
 	<include file="config/struts/struts-tipoempleado.xml" />
-	<include file="config/struts/struts-ejemplo.xml"/> <!-- Ejemplo Base -->
 	<include file="config/struts/struts-cliente.xml"/>
 	<include file="config/struts/struts-contrato.xml"/>
 </struts>
