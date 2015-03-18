@@ -5,9 +5,9 @@
 
 <struts>
     <package name="falla" extends="struts-default" namespace="/falla">        
-	<action name="fallaTest" method="fallaTest" class="fallaAction">		
+	<action name="falla" method="fallaInit" class="fallaAction">		
 		<result name="error">/jsp/amerror.jsp</result>
-		<result name="success">/jsp/exito.jsp</result>
+		<result name="success">/jsp/nokfallas.jsp</result>
 	</action>
 
     </package>
