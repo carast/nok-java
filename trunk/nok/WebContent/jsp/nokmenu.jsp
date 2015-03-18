@@ -90,6 +90,7 @@
 	                                    	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
 	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
 	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
 											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
 	                                        <li><a href="#" onclick="">Categorias </a>										
 												<ul>
