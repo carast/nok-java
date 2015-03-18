@@ -28,8 +28,7 @@
 			/WEB-INF/classes/config/context/applicationContextCategoria.xml
 			/WEB-INF/classes/config/context/applicationContextResguardo.xml
 			/WEB-INF/classes/config/context/applicationContextEquipo.xml
-			/WEB-INF/classes/config/context/applicationContextTipoEmpleado.xml	
-			/WEB-INF/classes/config/context/applicationContextEjemplo.xml<!--Ejemplo Contexto-->
+			/WEB-INF/classes/config/context/applicationContextTipoEmpleado.xml
 			/WEB-INF/classes/config/context/applicationContextCliente.xml
 	       </param-value>
 	</context-param>

@@ -26,7 +26,7 @@ public class EmpleadoDTO implements Serializable{
 	private String numExterior;
 	private String idTipoEmpleado;
 	private String tipoEmpleado;
-	private String fechaAlta;
+	private Date fechaAlta;
 	private String domicilio;
 	private String colonia;
 	private boolean estatus;	
@@ -94,12 +94,12 @@ public class EmpleadoDTO implements Serializable{
 	 }
 
 
-	public String getFechaAlta() {
+	public Date getFechaAlta() {
 		return fechaAlta;
 	}
 
 
-	public void setFechaAlta(String fechaAlta) {
+	public void setFechaAlta(Date fechaAlta) {
 		this.fechaAlta = fechaAlta;
 	}
 
