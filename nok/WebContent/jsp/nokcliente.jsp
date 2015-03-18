@@ -29,7 +29,7 @@
 	<div id="flashcontent" align="center" width="100%" style="padding-left:-0px; z-index:300;" >
 			<script language="Javascript">
                                 // <![CDATA[
-											var so = new FlashObject("/flash/Clientes.swf", "v8", "100%", "85%", "8");
+											var so = new FlashObject("/flash/Clientes.swf", "v8", "100%", "100%", "8");
 											so.addVariable("lang", "en");
 											so.addVariable("enforce", "0");
 											so.addParam("movie", "/flash/Clientes.swf");
