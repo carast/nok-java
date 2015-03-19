@@ -32,7 +32,31 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
+       <style type="text/css">
+   body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+html{
+    /* This image will be displayed fullscreen */
+    background:url('/nok/jsp/bootstrap/img/taller1.jpg') no-repeat center center;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+}
+
+body{
+    /* Workaround for some mobile browsers */
+    min-height:100%;
+}
+
+   </style>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -68,19 +92,16 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+<div>
 
-
-	<div width="100%" id="container" align="center">
-		<div style="position: relative; BORDER: #d6d6d6 1px solid; MARGIN: auto;width: 755px;height: 570px;" align="center" id="divprincipal">
-			<div style="position: absolute;width: 100%;FLOAT: left;">
-				<div style="position: relative;BACKGROUND: url(/images/logoempresatt.jpg) no-repeat 0px 0px;width: 300px;height: 55px;FLOAT: left;left: 5px; top: 40px;">
-				&nbsp;
-				</div>
-				
-			</div>
-			<div style="position: absolute;width: 100%;FLOAT: left;top:100px;">
-				
-					<form  action="<%=request.getContextPath()%>/login/login.action" id="loginform" method="POST">
+<div class="container">
+     <div class="col-sm-3">
+<div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Login</h3>
+            </div>
+            <div class="panel-body">
+              <form  action="<%=request.getContextPath()%>/login/login.action" id="loginform" method="POST">
 						<table>	
 							<tr>
 								<td class="labellogin">
@@ -111,15 +132,14 @@
 							</tr>
 						</table>
 						<input type="hidden" name="__RequestVerificationToken" value=""/>						
-					</form>		
-			</div>
-		<!-- 
-			<div style="position: relative; top:420px">
-				<jsp:include page="/jsp/amfootergenerico.jsp"></jsp:include>
-			</div>-->
-		</div><!-- fin div principal-->
-	</div><!-- fin div container -->
+					</form>	
+            </div>
+          </div>
 
+</div>
+	</div>
+	</div>	
+          
 
 
 
