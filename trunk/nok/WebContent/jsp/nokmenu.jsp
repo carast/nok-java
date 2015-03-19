@@ -32,252 +32,187 @@
 		}
 	}*/
 %>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet"
-	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<!-- SmartMenus 6 config and script core files -->
-<link rel="stylesheet" type="text/css" href="/css/jquery.hrzAccordion.defaults.css">
-<LINK REL="stylesheet" type="text/css" HREF="/css/amestilologin.css">
-<LINK REL="stylesheet" type="text/css" HREF="/css/splashscreen.css">
-<LINK rel="stylesheet" type="text/css" href="/css/template.css">
-<LINK rel="stylesheet" type="text/css"href="/css/homepage.css">
-<LINK rel="stylesheet" type="text/css"href="/css/table.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>MAQZAR : Management Mechanical Workshop</title>
 
-<script type="text/javascript" src="/lib/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="/lib/jquery-ui-1.8.6.custom.min.js"></script>
-<script type="text/javascript" src="/lib/jquery.effects.core.js"></script>
-<script type="text/javascript" src="/lib/efectos.js"></script>
-<script type="text/javascript" src="/js/c_config.js"></script>
-<script type="text/javascript" src="/js/c_smartmenus.js"></script>
-<script type="text/javascript" src="/js/liqHttpRequest.js"></script>
-<script type="text/javascript" src="/js/nokmenu.js?dev=<%=(int)(Math.random()*100)%>"></script>
-<script type="text/javascript" src="/js/c_addon_fx_reveal.js"></script>
-<script type="text/javascript" src="/js/c_addon_fx_shadow.js"></script>
-<!-- SmartMenus 6 Advanced Keyboard Navigation add-on -->
-<script type="text/javascript" src="/js/c_addon_keyboard.js"></script>
-<script language="JavaScript" src="/js/swfobject.js"></script>
-<script type="text/javascript" src="/js/FusionCharts.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="/nok/jsp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<title></title>
-<style type="text/css">
+    <!-- Custom styles for this template -->
+   <style type="text/css">
+   body {
+  min-height: 2000px;
+}
 
-</style>
-</head>
-<body >
+.navbar-static-top {
+  margin-bottom: 19px;
+}
+html{
+    /* This image will be displayed fullscreen */
+    background:url('/nok/jsp/bootstrap/img/taller1.jpg') no-repeat center center;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+}
+
+body{
+    /* Workaround for some mobile browsers */
+    min-height:100%;
+}
+   </style>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="/js/nokmenu.js?dev=<%=(int)(Math.random()*100)%>"></script>
+
+  </head>
+  
+<body>
 <input type="hidden" id="user" value="<%=user%>"/>
-
-<div id="AppTitleContainer">
-    <div id="topNav">
-      <div class="topLeft_NavContainer">&nbsp;</div>
-        <div class="topRight_NavContainer">&nbsp;</div>
-          <div class="topCenter_NavContainer">
-
-				<div style="float: left; text-align: left; width: 235px; height: 50px; padding-bottom: -10px;" align="left">
-					<img style="position: relative; top: 10px; left: 0px;"src="/images/logoempresa.jpg" border="0" />
-				</div>
-					
-				<div style="float:right;width:180px; height:60px;" > </div>
-						
-						<div class="middleContainer">
-							 <!-- MENU -->
-                          <div style="position:absolute; padding-left:10px;padding-bottom:0px;"  align="left">                             
-                                <ul id="Menu1" class="MM">                                 	
-
-                                  	<li><a href="#">Cat&aacute;logos</a>
-	                                    <ul>
-	                                    	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
-											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
-	                                        <li><a href="#" onclick="">Categorias </a>										
-												<ul>
-												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>		
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/articulo/articulo.action?titpant=index.datogral','','articulo',1024,750,1,1);">Artículos </a></li>												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a>																													
-																<ul>														
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>																	
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemplo.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a>																													
-																				<ul>														
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4</a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>																	
-																				</ul>															
-																	</li>	
-																</ul>															
-														</li>	
-												</ul>
-													
-													
-											</li>	
-	                                 	</ul>
-                                 	</li>
-                                 	
-                                 	
-                                 	<li><a href="#">Taller</a>
-	                                    <ul>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-	                                        <li><a href="#" onclick="">Nivel 1 </a>										
-												<ul>
-												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>		
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a>																													
-																<ul>														
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>																	
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a>																													
-																				<ul>														
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4</a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>																	
-																				</ul>															
-																	</li>	
-																</ul>															
-														</li>	
-												</ul>
-													
-													
-											</li>	
-	                                 	</ul>
-                                 	</li>
-                                 	
-                                 	
-                                 	<li><a href="#">Obra</a>
-	                                    <ul>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/contrato/contrato.action?titpant=index.datogral','','contrato',1024,750,1,1);">Contratos</a></li>
-											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-	                                        <li><a href="#" onclick="">Nivel 1 </a>										
-												<ul>
-												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>		
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a>																													
-																<ul>														
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>																	
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a>																													
-																				<ul>														
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4</a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>																	
-																				</ul>															
-																	</li>	
-																</ul>															
-														</li>	
-												</ul>
-													
-													
-											</li>	
-	                                 	</ul>
-                                 	</li>
-                                 	
-                                 	
-                                 	
-                                 	
-                                 	<li><a href="#">Maquinaria</a>
-	                                    <ul>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-	                                        <li><a href="#" onclick="">Nivel 1 </a>										
-												<ul>
-												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>		
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a>																													
-																<ul>														
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>																	
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a>																													
-																				<ul>														
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4</a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>																	
-																				</ul>															
-																	</li>	
-																</ul>															
-														</li>	
-												</ul>
-													
-													
-											</li>	
-	                                 	</ul>
-                                 	</li>
-                                 	
-                                 	
-                                 	<li><a href="#">Almacen</a>
-	                                    <ul>
-	                                     	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-											<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 1 </a></li>
-	                                        <li><a href="#" onclick="">Nivel 1 </a>										
-												<ul>
-												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>		
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a></li>												
-														<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 2 </a>																													
-																<ul>														
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a></li>																	
-																	<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 3 </a>																													
-																				<ul>														
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4</a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>
-																					<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/ejemplo/ejemploTest.action?titpant=index.datogral','','ejemplo',1024,750,1,1);">Nivel 4 </a></li>																	
-																				</ul>															
-																	</li>	
-																</ul>															
-														</li>	
-												</ul>
-													
-													
-											</li>	
-	                                 	</ul>
-                                 	</li>
-                                 	
-                                 	<li><a href="#" onclick="cerrarVentanas();">Logout</a></li>
-							
-	                        </div>
-							<!-- MENU --> 
-                          <div class="middleLeft_MainNavContainer">&nbsp;</div>
-                          <div class="middleRight_MainNavContainer">&nbsp;</div>
-                          <div class="middleCenter_MainNavContainer">&nbsp;</div>
-           			 </div>
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MMW</a>
         </div>
-   </div>
-	<div id="middleContainer" style="padding-left:-0px;" align="center"   style="width: 270px; height: 500px">
-	<div id="alignmentContainer"   style="width: 270px; height: 500px" align="center">
-    <table  border="1"  width="500" heigth="500">
-    <tr>
-    <td>
-    Página Contenido
-    </td>
-    </tr>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Escritorio</a></li>
+       
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">C&aacute;talogos <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
+				<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
+						
+               
+                <li class="divider"></li>
+                <li class="dropdown-header">Adicionales</li>
+                <li><a href="#">Catalogo 1</a></li>
+                <li><a href="#">Catalogo 2</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Taller<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
+				<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
+						
+                <li class="divider"></li>
+                <li class="dropdown-header">Adicionales</li>
+                <li><a href="#">Catalogo 1</a></li>
+                <li><a href="#">Catalogo 2</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Obras <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
+				<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
+						
+                <li class="divider"></li>
+                <li class="dropdown-header">Adicionales</li>
+                <li><a href="#">Catalogo 1</a></li>
+                <li><a href="#">Catalogo 2</a></li>
+              </ul>
+            </li>
+            
+            
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maquinaria <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
+				<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
+						
+                 <li class="divider"></li>
+                <li class="dropdown-header">Adicionales</li>
+                <li><a href="#">Catalogo 1</a></li>
+                <li><a href="#">Catalogo 2</a></li>
+              </ul>
+            </li>
+            
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Almacen <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/cliente/cliente.action?titpant=index.datogral','Clientes','cliente',1024,900,1,1);">Clientes </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/empleado/empleado.action?titpant=index.datogral','','empleado',1024,900,1,1);">Empleados </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/proveedor/proveedor.action?titpant=index.datogral','','proveedor',1024,900,1,1);">Proveedores </a></li>
+                <li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/falla/falla.action?titpant=index.datogral','','falla',1024,900,1,1);">Fallas </a></li>
+				<li><a href="#" onclick="openPopUp('<%=request.getContextPath()%>/categoria/categoria.action?titpant=index.datogral','Categorias','categorias',1024,900,1,1);">Categorías </a></li>
+						
+                 <li class="divider"></li>
+                <li class="dropdown-header">Adicionales</li>
+                <li><a href="#">Catalogo 1</a></li>
+                <li><a href="#">Catalogo 2</a></li>
+              </ul>
+            </li>
+            
+            
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+           
+            <li class="active"><a href="#" onclick="cerrarVentanas();">Salir<span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     
     
-    </table>
-    </div><!--  middleContainer-->
-</div> <!--  AppTitleContainer -->
 
-<br class="clearfloat" />
 
-<div style="position:relative;left: 10px;">
-	<jsp:include page="/jsp/amfootergenerico.jsp"></jsp:include>
-</div>
+
+
+
+
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/nok/jsp/bootstrap/js/jquery.min.js"></script>
+    <script src="/nok/jsp/bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    
 </body>
 </html>
 
