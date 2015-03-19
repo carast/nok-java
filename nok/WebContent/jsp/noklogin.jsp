@@ -29,7 +29,7 @@
     <title>MAQZAR : Management Mechanical Workshop</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/nok/jsp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
        <style type="text/css">
@@ -146,8 +146,8 @@ body{
  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/nok/jsp/bootstrap/js/jquery.min.js"></script>
+    <script src="/nok/jsp/bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>
