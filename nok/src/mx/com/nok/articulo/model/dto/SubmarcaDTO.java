@@ -1,7 +1,6 @@
 package mx.com.nok.articulo.model.dto;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class SubmarcaDTO implements Serializable{
 
@@ -14,10 +13,7 @@ public class SubmarcaDTO implements Serializable{
 	private String marca;
 	private String subcategoria;
 	private String filterEstatusSubmarca="";
-	private String filterEstatusArticulo="";
 	private boolean estatus;
-	private List<?> listSubmarca;
-	private List<?> listAtriculo;
 	
 	public String getMarca() {
 		return marca;
@@ -74,8 +70,7 @@ public class SubmarcaDTO implements Serializable{
 		return "\n[ idMarca = "+idMarca +
 			 	"\n idSubmarca = "+idSubmarca +
 				"\n submarca = "+submarca +
-				"\n estatus = "+estatus+ 
-				"\n listSubmarca = " +listSubmarca+"]";	
+				"\n estatus = "+estatus+"]";	
 	}
 	
 	
@@ -108,90 +103,13 @@ public class SubmarcaDTO implements Serializable{
 		this.estatus = estatus;
 	}
 
-
-
-
-
-
-	public List<?> getListSubmarca() {
-		return listSubmarca;
-	}
-
-
-
-
-
-
-	public void setListSubmarca(List<?> listSubmarca) {
-		this.listSubmarca = listSubmarca;
-	}
-
-
-
-
-
-
 	public String getFilterEstatusSubmarca() {
 		return filterEstatusSubmarca;
 	}
 
-
-
-
-
-
 	public void setFilterEstatus(String filterEstatusSubmarca) {
 		this.filterEstatusSubmarca = filterEstatusSubmarca;
 	}
-
-
-	/**
-	 * @return the filterEstatusArticulo
-	 */
-	public String getFilterEstatusArticulo() {
-		return filterEstatusArticulo;
-	}
-
-
-
-
-
-
-	/**
-	 * @param filterEstatusArticulo the filterEstatusArticulo to set
-	 */
-	public void setFilterEstatusArticulo(String filterEstatusArticulo) {
-		this.filterEstatusArticulo = filterEstatusArticulo;
-	}
-
-
-
-
-
-
-	/**
-	 * @return the listAtriculo
-	 */
-	public List<?> getListAtriculo() {
-		return listAtriculo;
-	}
-
-
-
-
-
-
-	/**
-	 * @param listAtriculo the listAtriculo to set
-	 */
-	public void setListAtriculo(List<?> listAtriculo) {
-		this.listAtriculo = listAtriculo;
-	}
-
-
-
-
-
 
 	/**
 	 * @param filterEstatusSubmarca the filterEstatusSubmarca to set

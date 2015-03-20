@@ -46,7 +46,7 @@
 	</resultMap>	
 
 	<procedure id="infoArticulo" resultMap="articuloMap" parameterClass="classArticuloMap" >
-		SELECT * FROM spr_articulo(#idArticulo#, #idSubmarca#, #filterEstatusArticulo#);
+		SELECT * FROM spr_articulo(#idArticulo#, #idsubcategoria#, #idSubmarca#, #filterEstatusArticulo#);
 	</procedure>	
 	
 	<procedure id="updateArticulo" resultMap="articuloMap" parameterClass="classArticuloMap" >

@@ -81,7 +81,7 @@ public class ArticuloDAOImpl extends SqlMapClientDaoSupport implements ArticuloD
 	}
 
 	
-	public List<?> infoArticulo(SubmarcaDTO dto) throws Exception {
+	public List<?> infoArticulo(ArticuloDTO dto) throws Exception {
 			return this.getSqlMapClientTemplate().
 			queryForList("infoArticulo",dto);
 	}

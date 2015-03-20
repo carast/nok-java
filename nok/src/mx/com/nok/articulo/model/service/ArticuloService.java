@@ -26,7 +26,7 @@ public interface ArticuloService {
 	public SubmarcaDTO updateEstatusSubmarca(SubmarcaDTO dto);
 	
 	//Servicios Articulo
-	public List<?> catArticulo(SubmarcaDTO dto);	
+	public List<?> catArticulo(ArticuloDTO dto);	
 	public ArticuloDTO insertArticulo(ArticuloDTO dto);
 	public ArticuloDTO updateArticulo(ArticuloDTO dto);
 	public boolean deleteArticulo(ArticuloDTO dto);
@@ -52,7 +52,7 @@ public interface ArticuloService {
 	public SubmarcaDTO updateEstatusSubmarcaAopSession(SubmarcaDTO dto);
 	
 	//Servicios Articulo
-	public List<?> catArticuloAopSession(SubmarcaDTO dto);	
+	public List<?> catArticuloAopSession(ArticuloDTO dto);	
 	public ArticuloDTO insertArticuloAopSession(ArticuloDTO dto);
 	public ArticuloDTO updateArticuloAopSession(ArticuloDTO dto);
 	public boolean deleteArticuloAopSession(ArticuloDTO dto);
