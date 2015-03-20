@@ -21,7 +21,7 @@ public interface ArticuloDAO{
 	public boolean deleteSubmarca(SubmarcaDTO dto) throws Exception;
 	public SubmarcaDTO updateEstatusSubmarca(SubmarcaDTO dto)throws Exception;	
 	
-	public List<?> infoArticulo(SubmarcaDTO dto) throws Exception;	
+	public List<?> infoArticulo(ArticuloDTO dto) throws Exception;	
 	public ArticuloDTO insertArticulo(ArticuloDTO dto)throws Exception;
 	public ArticuloDTO updateArticulo(ArticuloDTO dto) throws Exception;
 	public boolean deleteArticulo(ArticuloDTO dto) throws Exception;

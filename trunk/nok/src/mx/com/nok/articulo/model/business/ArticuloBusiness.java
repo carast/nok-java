@@ -104,7 +104,9 @@ public class ArticuloBusiness implements Serializable,ArticuloService{
 	 */
 	public SubmarcaDTO insertSubmarca(SubmarcaDTO dto) {
 		try {
-			return (SubmarcaDTO)articuloDAO.insertSubmarca(dto);
+			SubmarcaDTO subMarca = null;
+			subMarca = (SubmarcaDTO)articuloDAO.insertSubmarca(dto);
+			return subMarca;
 		} catch (Exception e) {			
 			e.printStackTrace();
 			return null;
@@ -169,7 +171,7 @@ public class ArticuloBusiness implements Serializable,ArticuloService{
 //----------------------------------ARTICULO---------------------------------------------
 	
 	
-	public List<?>catArticulo(SubmarcaDTO dto){
+	public List<?>catArticulo(ArticuloDTO dto){
 		
 		List <?> list= new ArrayList<ArticuloDTO>();		
 		try {					
@@ -413,7 +415,7 @@ public List<?>buscaArticulo(ArticuloDTO dto){
 //----------------------------------ARTICULO---------------------------------------------
 	
 	
-	public List<?>catArticuloAopSession(SubmarcaDTO dto){
+	public List<?>catArticuloAopSession(ArticuloDTO dto){
 		
 		List <?> list= new ArrayList<ArticuloDTO>();		
 		try {					

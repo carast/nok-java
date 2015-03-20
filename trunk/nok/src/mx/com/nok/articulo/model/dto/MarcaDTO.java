@@ -1,7 +1,6 @@
 package mx.com.nok.articulo.model.dto;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class MarcaDTO implements Serializable{
 	
@@ -9,25 +8,17 @@ public class MarcaDTO implements Serializable{
 	
 	private String idMarca;
 	private String marca;
-	private String filterEstatusMarca="";
-	private String filterEstatusSubmarca="";
-	private String filterEstatusArticulo="";
-	private boolean estatus;	
-	private List<?> listSubmarca;
-	private List<?> listMarca;	
+	private boolean estatus;		
 	private String subcategoria;
 	private String idSubcategoria;
+	private String filterEstatusMarca;
 	
 	public String toString()
 	{
 		return 
 				"\n\t [ idMarca = " +idMarca+
 				"\n\t marca = " +marca+
-				"\n\t estatus = " +estatus+
-				"\n\t listMarca = " +listMarca+ 
-				"\n\t  listSubmarca = " +listSubmarca+"]";
-				
-		
+				"\n\t estatus = " +estatus+"]";
 	}
 
 
@@ -61,72 +52,6 @@ public class MarcaDTO implements Serializable{
 	}
 
 
-	public List<?> getListSubmarca() {
-		return listSubmarca;
-	}
-
-
-	public void setListSubmarca(List<?> listSubmarca) {
-		this.listSubmarca = listSubmarca;
-	}
-
-
-	public List<?> getListMarca() {
-		return listMarca;
-	}
-
-
-	public void setListMarca(List<?> listMarca) {
-		this.listMarca = listMarca;
-	}
-	/**
-	 * @return the filterEstatusSubmarca
-	 */
-	public String getFilterEstatusSubmarca() {
-		return filterEstatusSubmarca;
-	}
-
-
-	/**
-	 * @param filterEstatusSubmarca the filterEstatusSubmarca to set
-	 */
-	public void setFilterEstatusSubmarca(String filterEstatusSubmarca) {
-		this.filterEstatusSubmarca = filterEstatusSubmarca;
-	}
-
-
-	/**
-	 * @return the filterEstatusMarca
-	 */
-	public String getFilterEstatusMarca() {
-		return filterEstatusMarca;
-	}
-
-
-	/**
-	 * @param filterEstatusMarca the filterEstatusMarca to set
-	 */
-	public void setFilterEstatusMarca(String filterEstatusMarca) {
-		this.filterEstatusMarca = filterEstatusMarca;
-	}
-
-
-	/**
-	 * @return the filterEstatusArticulo
-	 */
-	public String getFilterEstatusArticulo() {
-		return filterEstatusArticulo;
-	}
-
-
-	/**
-	 * @param filterEstatusArticulo the filterEstatusArticulo to set
-	 */
-	public void setFilterEstatusArticulo(String filterEstatusArticulo) {
-		this.filterEstatusArticulo = filterEstatusArticulo;
-	}
-
-
 	public String getIdSubcategoria() {
 		return idSubcategoria;
 	}
@@ -134,6 +59,16 @@ public class MarcaDTO implements Serializable{
 
 	public void setIdSubcategoria(String idSubcategoria) {
 		this.idSubcategoria = idSubcategoria;
+	}
+
+
+	public String getFilterEstatusMarca() {
+		return filterEstatusMarca;
+	}
+
+
+	public void setFilterEstatusMarca(String filterEstatusMarca) {
+		this.filterEstatusMarca = filterEstatusMarca;
 	}
 
 	
