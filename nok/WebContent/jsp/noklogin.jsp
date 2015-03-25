@@ -106,7 +106,7 @@ body{
 							<tr>
 								<td class="labellogin">
 									Usuario:<br>
-									<input id="usuario" name="usuario" value="ADMIN" size="20" maxlength="15" onkeypress="javascript:validalogin(event);" autocomplete="off">
+									<input id="usuario" name="usuario" value="ZAOC810304NM0" size="20" maxlength="15" onkeypress="javascript:validalogin(event);" autocomplete="off">
 								</td>
 								<td colspan="2 ">
 									
@@ -115,7 +115,7 @@ body{
 							<tr><br>
 								<td class="labellogin">
 									Password:<br>
-									<input type="password" id="password" name="password" valud="ADMIN" size="20" maxlength="10" onkeypress="javascript:validalogin(event);" autocomplete="off">
+									<input type="password" id="password" name="password" value="za" size="20" maxlength="10" onkeypress="javascript:validalogin(event);" autocomplete="off">
 								
 								</td>
 							
