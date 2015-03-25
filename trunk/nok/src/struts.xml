@@ -27,4 +27,5 @@
 	<include file="config/struts/struts-tipoempleado.xml" />
 	<include file="config/struts/struts-cliente.xml"/>
 	<include file="config/struts/struts-contrato.xml"/>
+	<include file="config/struts/struts-adquisicion.xml"/>
 </struts>

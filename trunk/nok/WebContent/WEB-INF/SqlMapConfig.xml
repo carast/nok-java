@@ -25,6 +25,7 @@
   <sqlMap resource="config/sqlmaps/tipoempleadomap.xml"/>
   <sqlMap resource="config/sqlmaps/clientemap.xml"/>
   <sqlMap resource="config/sqlmaps/contratomap.xml"/>
+  <sqlMap resource="config/sqlmaps/adquisicionmap.xml"/>
  
  
 </sqlMapConfig>

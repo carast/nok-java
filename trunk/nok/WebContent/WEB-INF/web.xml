@@ -30,6 +30,7 @@
 			/WEB-INF/classes/config/context/applicationContextEquipo.xml
 			/WEB-INF/classes/config/context/applicationContextTipoEmpleado.xml
 			/WEB-INF/classes/config/context/applicationContextCliente.xml
+			/WEB-INF/classes/config/context/applicationContextArticulo.xml
 	       </param-value>
 	</context-param>
 	<context-param>

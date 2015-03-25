@@ -205,6 +205,11 @@
 	</properties>
 </destination>
 
-        
+<destination id="adquisicionBusiness">
+	<properties>
+		<factory>spring</factory>
+		<source>adquisicionBusiness</source>
+	</properties>
+</destination>
         
   </service>

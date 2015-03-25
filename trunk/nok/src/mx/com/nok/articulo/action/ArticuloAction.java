@@ -1,14 +1,7 @@
 package mx.com.nok.articulo.action;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import mx.com.nok.articulo.model.dto.ArticuloDTO;
-
-import mx.com.nok.articulo.model.dto.SubmarcaDTO;
 import mx.com.nok.articulo.model.service.ArticuloService;
 
 
